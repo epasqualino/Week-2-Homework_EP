@@ -66,6 +66,7 @@ body {
     margin: 20px;
     border-right: 5px solid #1A132F;
     padding: 20px;
+    position: relative;
 }
 
 .about-me-bio {
@@ -77,4 +78,87 @@ body {
     order: 0;
     margin: 20px;
     padding: 20px;
+}
+
+/* Work Section */
+
+.work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
+    align-content: space-between;
+}
+
+.work h2 {
+    font-size: 36px;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    margin: 20px;
+    border-right: 5px solid #1A132F;
+    padding: 35px;
+    position: relative;
+    right: 370px;
+}
+
+.work-links {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: stretch;
+    order: 0;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Contact Me Section */
+.contact-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
+    align-content: space-between;
+}
+
+.contact-me h2 {
+    font-size: 36px;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    margin: 20px;
+    border-right: 5px solid #1A132F;
+    padding: 20px;
+    position: relative;
+    right: 30px;
+}
+
+.contact-me-links {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: stretch;
+    order: 0;
+    margin: 20px;
+    padding: 20px;
+}
+
+.contact-me-links ul {
+    list-style-type: none;
+}
+
+.contact-me-links ul li {
+    display: inline-block;
+    margin: 20px;
+    padding:20px;
 }
