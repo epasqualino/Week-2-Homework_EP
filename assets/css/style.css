@@ -20,6 +20,7 @@ body {
     font-size: 48px;
 }
 
+/* Menu bar in top right corner of header */
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -35,4 +36,45 @@ body {
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
+}
+/* Hero element */
+
+/* content in body centered to screen size */
+.content {
+    width: 80%;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
+    align-content: space-between;
+}
+
+.about-me h2 {
+    font-size: 36px;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    margin: 20px;
+    border-right: 5px solid #1A132F;
+    padding: 20px;
+}
+
+.about-me-bio {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: stretch;
+    order: 0;
+    margin: 20px;
+    padding: 20px;
 }
