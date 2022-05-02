@@ -5,6 +5,8 @@
 }
 
 body {
+    display: block;
+    margin: 15px;
     background-color: #F7E2E2;
 }
 
@@ -41,16 +43,19 @@ body {
 
 /* content in body centered to screen size */
 .content {
-    width: 80%;
-    display: inline-block;
-    margin-left: auto;
+    position: relative;
+    justify-content: flex-start;
+    display: block;
+    margin: 15px;
+    border: 4px;
+    text-align: left;
+    background-color: #F7E2E2;
 }
 
 .about-me {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
     align-items: normal;
     align-content: space-between;
 }
@@ -86,7 +91,6 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
     align-items: normal;
     align-content: space-between;
 }
@@ -101,9 +105,8 @@ body {
     order: 0;
     margin: 20px;
     border-right: 5px solid #1A132F;
-    padding: 35px;
+    padding: 20px;
     position: relative;
-    right: 370px;
 }
 
 .work-links {
@@ -122,8 +125,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: normal;
+    align-items: flex-start;
     align-content: space-between;
 }
 
