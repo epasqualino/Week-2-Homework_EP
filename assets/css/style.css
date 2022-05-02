@@ -42,9 +42,18 @@ body {
 /* Hero element */
 
 /* content in body centered to screen size */
-.content {
+.sections {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+}
+
+.section-headers {
     position: relative;
-    justify-content: flex-start;
+    justify-content: flex-end;
     display: block;
     margin: 15px;
     border: 4px;
@@ -52,26 +61,41 @@ body {
     background-color: #F7E2E2;
 }
 
-.about-me {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: normal;
-    align-content: space-between;
-}
-
 .about-me h2 {
     font-size: 36px;
     display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
     margin: 20px;
     border-right: 5px solid #1A132F;
     padding: 20px;
     position: relative;
+}
+
+.work h2 {
+    font-size: 36px;
+    display: block;
+    margin: 20px;
+    border-right: 5px solid #1A132F;
+    padding: 20px;
+    position: relative;
+}
+
+.contact-me h2 {
+    font-size: 36px;
+    display: block;
+    margin: 20px;
+    border-right: 5px solid #1A132F;
+    padding: 20px;
+    position: relative;
+}
+
+.content {
+    position: relative;
+    justify-content: space-between;
+    display: block;
+    margin: 15px;
+    border: 4px;
+    text-align: left;
+    background-color: #F7E2E2;
 }
 
 .about-me-bio {
@@ -85,30 +109,6 @@ body {
     padding: 20px;
 }
 
-/* Work Section */
-
-.work {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: normal;
-    align-content: space-between;
-}
-
-.work h2 {
-    font-size: 36px;
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    margin: 20px;
-    border-right: 5px solid #1A132F;
-    padding: 20px;
-    position: relative;
-}
-
 .work-links {
     display: block;
     flex-grow: 1;
@@ -118,30 +118,6 @@ body {
     order: 0;
     margin: 20px;
     padding: 20px;
-}
-
-/* Contact Me Section */
-.contact-me {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    align-content: space-between;
-}
-
-.contact-me h2 {
-    font-size: 36px;
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    margin: 20px;
-    border-right: 5px solid #1A132F;
-    padding: 20px;
-    position: relative;
-    right: 30px;
 }
 
 .contact-me-links {
@@ -161,6 +137,6 @@ body {
 
 .contact-me-links ul li {
     display: inline-block;
-    margin: 20px;
-    padding:20px;
+    margin-top: 40px;
+    padding:10px;
 }
