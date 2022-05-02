@@ -39,7 +39,21 @@ body {
     display: inline-block;
     margin-left: 25px;
 }
+
+a {
+    color: #1A132F;
+    text-decoration: none;
+}
 /* Hero element */
+
+.hero {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(./assets/images/hands.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
 /* content in body centered to screen size */
 .sections {
@@ -55,6 +69,7 @@ body {
     position: relative;
     justify-content: flex-end;
     display: block;
+
     margin: 15px;
     border: 4px;
     text-align: left;
@@ -137,6 +152,5 @@ body {
 
 .contact-me-links ul li {
     display: inline-block;
-    margin-top: 40px;
     padding:10px;
 }
